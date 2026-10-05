@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background: #1e293b; color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="margin: 0; font-size: 20px;">Almoxarifado</h1>
+        <div>
+            <span id="nomeUsuario" style="font-weight: bold;">Usuário</span> | 
+            <a href="#" onclick="logout()" style="color: #f87171; text-decoration: none; font-weight: bold; margin-left: 10px;">Sair</a>
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h2 style="margin-top: 0;">Bem-vindo ao Sistema de Controle de Estoque</h2>
+        <p style="color: #64748b; margin-bottom: 25px;">Selecione uma das opções abaixo para navegar no sistema:</p>
+
+        <!-- Menu com botões visíveis -->
+        <nav style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="produtos.html" style="flex: 1; min-width: 180px; padding: 15px; background-color: #2563eb; color: white; text-decoration: none; border-radius: 6px; text-align: center; font-weight: bold;">
+                📦 Gestão de Produtos
+            </a>
+            <a href="estoque.html" style="flex: 1; min-width: 180px; padding: 15px; background-color: #059669; color: white; text-decoration: none; border-radius: 6px; text-align: center; font-weight: bold;">
+                🔄 Entrada / Saída
+            </a>
+            <a href="historico.html" style="flex: 1; min-width: 180px; padding: 15px; background-color: #4f46e5; color: white; text-decoration: none; border-radius: 6px; text-align: center; font-weight: bold;">
+                📜 Histórico
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

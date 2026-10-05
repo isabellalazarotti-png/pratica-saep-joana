@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container login-box">
+        <h2>Login no Sistema</h2>
+        <form id="formLogin">
+            <div>
+                <label>Usuário:</label>
+                <input type="text" id="usuario" required placeholder="ex: joana">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" id="senha" required placeholder="ex: 1234">
+            </div>
+            <button type="submit">Entrar</button>
+            <p id="msgErro" style="color:red; display:none; margin-top:10px;"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
